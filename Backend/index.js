@@ -9,7 +9,7 @@ const cors = require('cors');
 const app=express();
 
 app.use(cors({
-  origin: ['https://to-do-app-frontend-kohl.vercel.app' ],
+  origin: ['https://todo-app-frontend-h5be.onrender.com' ],
  
   
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 
