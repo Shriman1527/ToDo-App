@@ -20,7 +20,7 @@ function Signup(){
        
         try{
 
-            const responce= await axios.post('https://todo-app-vbvj.onrender.com/user/signup',{
+            const responce= await axios.post('https://todo-app-backend-ch4v.onrender.com/user/signup',{
                 email:email,
                 password:password,
                 name:name
