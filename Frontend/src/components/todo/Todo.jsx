@@ -42,7 +42,7 @@ function Todo(){
 
         try{
 
-            const responce = await axios.put(`https://todo-app-vbvj.onrender.com/user/todo/${todoId}`,
+            const responce = await axios.put(`https://todo-app-backend-ch4v.onrender.com/user/todo/${todoId}`,
                 {newTodo:newTitle},
                 {
                     headers:{
@@ -75,7 +75,7 @@ function Todo(){
         }  
     
         try{
-            await axios.delete(`https://todo-app-vbvj.onrender.com/user/todo/${todoId}`, {
+            await axios.delete(`https://todo-app-backend-ch4v.onrender.com/user/todo/${todoId}`, {
                 headers:{
                     token:token
                 }
@@ -160,7 +160,7 @@ function CreateTodo(){
         }
        
         try{
-            const  responce= await axios.post("https://todo-app-vbvj.onrender.com/user/todo",
+            const  responce= await axios.post("https://todo-app-backend-ch4v.onrender.com/user/todo",
                 {
 
                 title:title,
@@ -255,7 +255,7 @@ function GetAll(){
         }
         
         try{
-            const responce= await axios("https://todo-app-vbvj.onrender.com/user/todos",{
+            const responce= await axios("https://todo-app-backend-ch4v.onrender.com/user/todos",{
                 headers:{
                     token:token
                 }
