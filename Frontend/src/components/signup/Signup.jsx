@@ -20,7 +20,7 @@ function Signup(){
        
         try{
 
-            const responce= await axios.post('todo-app-tau-ten-57.vercel.app/user/signup',{
+            const responce= await axios.post('https://todo-app-tau-ten-57.vercel.app/user/signup',{
                 email:email,
                 password:password,
                 name:name
