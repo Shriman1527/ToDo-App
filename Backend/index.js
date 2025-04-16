@@ -9,7 +9,7 @@ const cors = require('cors');
 const app=express();
 
 app.use(cors({
-  origin: ['http://localhost:5173','http://localhost:5174' ],
+  origin: ['https://to-do-app-frontend-bice.vercel.app' ],
  
   
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 

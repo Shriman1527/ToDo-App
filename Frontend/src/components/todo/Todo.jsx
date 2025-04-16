@@ -42,7 +42,7 @@ function Todo(){
 
         try{
 
-            const responce = await axios.put(`http://localhost:3000/user/todo/${todoId}`,
+            const responce = await axios.put(`https://todo-app-tau-ten-57.vercel.app/user/todo/${todoId}`,
                 {newTodo:newTitle},
                 {
                     headers:{
@@ -75,7 +75,7 @@ function Todo(){
         }  
     
         try{
-            await axios.delete(`http://localhost:3000/user/todo/${todoId}`, {
+            await axios.delete(`https://todo-app-tau-ten-57.vercel.app/user/todo/${todoId}`, {
                 headers:{
                     token:token
                 }
@@ -160,7 +160,7 @@ function CreateTodo(){
         }
        
         try{
-            const  responce= await axios.post("http://localhost:3000/user/todo",
+            const  responce= await axios.post("https://todo-app-tau-ten-57.vercel.app/user/todo",
                 {
 
                 title:title,
@@ -255,7 +255,7 @@ function GetAll(){
         }
         
         try{
-            const responce= await axios("http://localhost:3000/user/todos",{
+            const responce= await axios("https://todo-app-tau-ten-57.vercel.app/user/todos",{
                 headers:{
                     token:token
                 }
